@@ -12,7 +12,7 @@ html, body{
     top:0;
     left:0;
     bottom:0;
-    background:rgb(27, 1, 14);
+    background:rgb(88, 9, 88);
     /*y pega altura, n deixa conteudos serem cortados*/
     overflow-Y: auto;
     width: 300px;
@@ -41,12 +41,12 @@ html, body{
 }
 #header .profile .social-links a{
     font-size:1rem;
-    background: purple;
+    background: rgb(223, 161, 223);
     padding:0.6rem;
     margin-right: 1rem;
     border-radius: 50%;
     transition: 0.3s;
-    color:white;
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }
 #header .profile .social-links a:hover{
@@ -60,7 +60,7 @@ html, body{
 .nav-menu a:focus{
     display: flex;
     align-items: center;
-    color: #a8a9b4;
+    color: #ffffff;
     transition: 0.3s;
     font-size: 15px;
 }
@@ -68,7 +68,7 @@ html, body{
 .nav-menu a:focus i{
     font-size: 24px;
     padding-right: 0.8rem;
-    color:#6f7180
+    color:#ffffff
 }
 
 .nav-menu a:hover,
@@ -83,7 +83,7 @@ html, body{
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover > a i{
-    color:rgb(255, 0, 200)
+    color:rgb(117, 56, 104)
 }
 
 #main{
@@ -91,7 +91,7 @@ html, body{
 }
 
 section#inicio{
-    background-image: url(" ./img/banner.jpg");
+    background-image: url(" ./img/euu.jpeg");
     background-repeat: no-repeat;
     /*ocupa todo espaço que possui*/
     background-size: cover;
@@ -124,6 +124,164 @@ section#inicio div#arraste{
 }
 section#inicio div#arraste a{
     text-decoration: none;
-    color:white
-    
+    color:white   
+}
+
+i.menu-mobile{
+    position: fixed;
+    color:white;
+    background-color: purple;
+    right:1rem;
+    top:1rem;
+    font-size:1.5rem;
+    border-radius:4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: none;
+    justify-content: center;
+    align-items: center ;
+}
+
+.menu-nav-active{
+    /*n consegue descer antes de acessar o menu*/
+    overflow: hidden;
+}
+
+.menu-nav-active #header{
+    /*volta para a posição atual*/
+    left:0;
+}
+
+@media(max-width:1024px){
+    #header{
+        /*estou diminuindo aqui a tela*/
+        left:-300px;
+    }
+    i.menu-mobile{
+        display: flex;
+    }
+    section#inicio h1{
+        font-size: 3.5rem;
+    }
+    section#inicio span#subtitle{
+        margin-right: 0;
+        font-size: 1rem;
+    }
+    #main{
+        /*estou diminuindo aqui a tela*/
+        margin-left: 0;
+    }
+}
+/*estilizando barra de scron*/
+/*seletor *é um universal, webkit é pra funcionar em qualquer navegador*/
+*::-webkit-scrollbar {
+    width:10px
+}
+/*track é o background, a base do rolamento*/
+*::-webkit-scrollbar-track{
+    width: 12px;
+    box-shadow: inset 0 0 .3rem black;
+    background-color: white;
+}
+/*thumb é a barra de rolagem*/
+*::-webkit-scrollbar-thumb{
+    background-color: purple;
+
+}
+
+.section-bg{
+    background-color: #eff5ff;
+}
+
+.cv .cv-title{
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.cv .cv-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgb(209, 60, 247);
+    position: relative;
+}
+.cv .cv-item h4{
+    /*espaçamento entre linhas*/
+    line-height: 18px;
+    font-weight: 600;
+    /*todas as letras maisculas*/
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.cv .cv-item h5{
+   background-color: white;
+   /*fica fixo naquela linha*/
+   display: inline-block;
+   padding: 5px 15px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+/*bolinha*/
+/*before add o item no elemento pai*/
+.cv .cv-item::before{ 
+    /*possui algo? deixou vazio*/
+    content:"";
+    /*aparece por cima de qualquer coisa*/
+    position:absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid blue;
+    background-color: white;
+    /*o pai tem position relative, mas a bolinha fica tem position absolute, ou seja, ele vai ser absoluto dentro do pai (cv-item), ele n foge, fica na tela inteira, mas fica no top do cv-tem */
+    top:0;
+    /*fica mais pra trás para ficar exatamente no lugar que eu quero*/
+    left:-9px;
+    border-radius: 50%;
+}
+
+/*animação*/
+/*para chamar um atributo aqui coloca entre cochetes*/
+[data-animation] {
+    opacity: 0;
+    transition: 1s;
+}
+/*down significa que está descendo, translated3d o primeiro é a coordenada
+x, o segundo y e o terceiro profundidade z*/
+[data-animation="down"]{
+    transform: translate3d(0,-100%,0);
+}
+/*up siginifica que está subindo*/
+[data-animation="up"]{
+    transform: translate3d(0,100%,0);
+}
+/*entrando os elementos pelas esquerda*/
+[data-animation="left"]{
+    transform: translate3d(-100%,0,0);
+}
+/*entrando os elementos pelas direita*/
+[data-animation="right"]{
+    transform: translate3d(50px,0,0);
+}
+/*.animate é uma classe lá no js que ve se o scroll está passando*/
+[data-animation].animate{
+    opacity: 1;
+    /*volta a posição inicial*/
+    transform: translate3d(0,0,0);
+}
+
+@media (max-width:1860px){
+    .carousel-control-prev{
+        margin-left: 0;
+    }
+    .carousel-control-next{
+        margin-right: 0;
+    }
+    [data-animation="right"]{
+        transform: translate3d(-100%,0,0);
+    }
 }

@@ -1,5 +1,8 @@
+<!--todas as class possuem comandos do botstrap decoreos para ajudar a programar no site do artigo-->
+<!--foto background mexendo no pc, arrumar o tcc, acabar pizzaria e colocar-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +10,55 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" type="image/png" href="../static/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>A</title>
+    <title>Júlia Lopes Coimbra</title>
 </head>
+
 <body>
+
+    <i class="bi bi-list menu-mobile"></i>
+
     <aside id="header">
         <section class="profile">
             <img src="../static/img/profile.jpg" alt="foto da Julia">
             <h1>Júlia Lopes Coimbra</h1>
             <div class="social-links mt-4 text-center">
                 <a target="_blank" href="https://github.com/JuliaLopesCoimbra"><i class="bi bi-github"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/in/júlia-lopes-12648624a/"><i class="bi bi-linkedin"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/júlia-lopes-12648624a/"><i
+                        class="bi bi-linkedin"></i></a>
                 <a target="_blank" href="https://www.instagram.com/lccjuu/"><i class="bi bi-instagram"></i></a>
             </div>
         </section>
-        
+
         <nav id="navbar" class="nav-menu">
-            <ul class="nav ">
+            <ul class="nav flex-column ">
 
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i>Inicio</a>
-                </li>
-
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-person"></i>Sobre</a>
+                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="bi bi-house text-white"></i>Inicio</a>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-list-check"></i>Habilidades</a>
+                    <a class="nav-link active" href="#sobre"><i class="bi bi-person text-white"></i>Sobre</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-file-earmark"></i>Currículo</a>
+                    <a class="nav-link active" href="#habilidades"><i class="bi bi-list-check text-white"></i>Habilidades</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-collection"></i>Portifólio</a>
+                    <a class="nav-link active" aria-current="curriculo" href="#curriculo"><i
+                            class="bi bi-file-earmark text-white"></i>Currículo</a>
                 </li>
-                
+
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-envelope"></i>Contato</a>
+                    <a class="nav-link active" aria-current="portifolio" href="#portifolio"><i
+                            class="bi bi-collection text-white"></i>Portifólio</a>
                 </li>
-              
-              </ul>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="contato" href="#contato"><i class="bi bi-envelope text-white"></i>Contato</a>
+                </li>
+
+            </ul>
 
         </nav>
     </aside>
@@ -56,19 +66,553 @@
         <section id="inicio" class="row m-0 p-0">
             <div class="col-md-5 d-flex justify-content-center align-items-center flex-column">
                 <p id="Titulo" class="text-white text-shadow">Julia Lopes Coimbra</p>
-                <span id="subtitle" class="text-white text-shadow">Graduanda de Engenharia de Software e Pesquisadora </span>
+                <span id="subtitle" class="text-white text-shadow">Graduanda de Engenharia de Software e Pesquisadora
+                </span>
             </div>
             <div class="col-md-7 d-flex justify-content-end align-items-end">
                 <div id="arraste" class="d-flex align-items-center">
                     <i class="bi bi-arrow-down text-white pe-2 fs-2" aria-hidden="true"></i>
-                    <a href="">arraste para mais</a>
+                    <a href="#sobre">arraste para mais</a>
                 </div>
             </div>
         </section>
 
+        <section id="sobre" class="container mt-5">
+            <div class="row w-100">
+                <div class="col-md-12" data-animation="down">
+                    <h2 class="pt-3">Sobre</h2>
+                    <p>Meu nome é Julia, tenho 19 anos e tento buscar o meu melhor todos os dias. Ainda não estou no
+                        mercado de trabalho, mas busco estudos extracurriculares para conquistar minha vaga como
+                        desenvolvedora,
+                        apesar da faculdade, possuo uma bolsa de iniciação cientifíca, na qual me tornei Pesquisadora
+                        também.
+                        Possuo formação Técnica em Desenvolvimento de Sistemas pela ETEC - Doutor Júlio Cardoso
+                        integrado
+                        ao Ensino Médio e atualmente estou em graduação em Engenharia de Software no Uni-FACEF.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <!--img-fluid é uma classe que faz a img adaptar a qualquer espaço -->
+                    <img class="img-fluid shadow" src="../static/img/profile.jpg" alt="foto da Júlia" data-animation="left">
+                </div>
+                <div class="col-md-8" data-animation="right">
+                    <h3>Graduanda em Engenharia de Software</h3>
+                    <p>Atualmente estou no 3 semestre de Engenharia de Software e realizo uma pesquisa cientifíca sobre
+                        Inteligência Aritificial
+                    </p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    Niver: <span class="fw-lighter">26 de Julho de 2004</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Idade: <span class="fw-lighter">19 anos</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Cidade: <span class="fw-lighter">Franca</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Estado: <span class="fw-lighter">São Paulo</span>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush fs-7">
+                                <li class="list-group-item">
+                                    Hobby :<span class="fw-lighter"> Academia e Volei</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Experiência :<span class="fw-lighter"> Técnica e Graduanda em Tecnologia</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Trabalho:<span class="fw-lighter"> Atendende de Restaurante</span>
+                                </li>
+                                <li class="list-group-item">
+                                    Apelido :<span class="fw-lighter"> Ju</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class=".row mt-3 mb-3"></div>
+
+                    <p>Além desse portifólio, há no meu github todos os meus projetos feitos durante minha jornada, lá
+                        possui todos os exercícios e projetos que realizei durante a faculdade e o curso, sejam eles das
+                        linguagens
+                        de programação: JavaScript, TypeScript, HTML E CSS, Python, NodeJS, React.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+            </div>
+
+        </section>
+
+        <section id="habilidades" class="mt-5 section-bg">
+            <div class="container pb-5">
+                <h2 class="pt-5"> Habilidades</h2>
+                <p> Como todo estudante de computação, há grande desafios na programação, ao decorrer
+                    da minha trajetória eu adquiri hailidades técnicas e não técnicas.
+                    Diante das minhas inspirações na área de Tecnologia eu me considero da seguinte forma quando se
+                    trata de conhecimento:
+                </p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0"> HTML</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 45%;" aria-valuenow="100">
+                                50%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> CSS</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 55%;" aria-valuenow="100">
+                                55%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> JavaScript</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 45%;" aria-valuenow="100">
+                                45%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Python</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 50%;" aria-valuenow="100">
+                                50%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Java</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 30%;" aria-valuenow="100">
+                                30%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Git</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 60%;" aria-valuenow="100">
+                                60%
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0"> React</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 40%;" aria-valuenow="100">
+                                40%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> C#Sharp</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 20%;" aria-valuenow="100">
+                                20%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Angular</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left"  role="progressbar" style="width: 20%;" aria-valuenow="100">
+                                20%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> NodeJS</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 20%;" aria-valuenow="100">
+                                20%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Docker</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 15%;" aria-valuenow="100">
+                                15%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Banco de Dados</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 35%;" aria-valuenow="100">
+                                35%
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <hr class="w-50 me-auto ms-auto">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0"> Trabalho em Equipe</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 85%;" aria-valuenow="100">
+                                80%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Proatividade</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 95%;" aria-valuenow="100">
+                                95%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Orientação a Detalhes</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 65%;" aria-valuenow="100">
+                                65%
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="mt-3 mb-0"> Comunicação</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 97%;" aria-valuenow="100">
+                                97%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Empatia</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 90%;" aria-valuenow="100">
+                                90%
+                            </div>
+                        </div>
+
+                        <p class="mt-3 mb-0"> Compromentimento</p>
+                        <div class="progress">
+                            <div class="progress-bar" data-animation="left" role="progressbar" style="width: 98%;" aria-valuenow="100">
+                                98%
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="curriculo" class="mt-5 cv">
+            <div class="container pb-5 ">
+                <h2 class="pb-3 pb-4">Currículo</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="cv-title">Educação</h3>
+
+                        <div class="cv-item" data-animation="up">
+                            <h4>Tec. de Des. de Sistemas</h4>
+                            <h5>2020 - 2022</h5>
+                            <p><em>ETEC - Doutor Júlio Cardoso</em></p>
+                            <p>Técnico Integrado ao Ensino Médio voltado a ensinos básicos da tecnologia com o foco em
+                                programação, análise de sistemas e hardware.</p>
+                        </div>
+                        <div class="cv-item" data-animation="up">
+                            <h4>Bacha. em Eng. de Software</h4>
+                            <h5>2023 - 2026</h5>
+                            <p><em>Uni-FACEF - Centro Universitário Municipal de Franca</em></p>
+                            <p>Estudando conceitos e técnicas da informática e engenharia para contribuir com o meu
+                                futuro.</p>
+                        </div>
+                        <div class="cv-item" data-animation="up">
+                            <h4>Pesquisadora CNPQ</h4>
+                            <h5>2023 - 2024</h5>
+                            <p><em>Conselho Nacional de Desenvolvimento Científico e Tecnológico</em></p>
+                            <p>Iniciação Científica em decorrência da Bolsa do PIBITI - CNPQ. Pesquisa realiada na Área
+                                da Inteligência Artificial</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6" data-animation="up">
+                        <h3>Profissional</h3>
+                        <div class="cv-item">
+                            <h4>Atendende</h4>
+                            <h5>2022 - 2024</h5>
+                            <p><em>Restaurante Adriana Lopes</em></p>
+                            <p>Esse trabalho é o que me sustenta enquanto não possuo a oportunidade de entrar na área.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portifolio section-bg mt-5">
+            <div class="container pb-5 pt-5 " data-animation="left">
+                <h2 class="pb-4"> Portifolio</h2>
+
+                <div id="carouselPortifolio" class="carousel carousel-dark slide">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselPortifolio" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/filmes.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Prime Flix</h5>
+                                            <p class="card-text">Projeto construído em React,CSS, Html e JavaScript onde
+                                                você pode visualizar filmes recentes e as suas respectivas informações.
+                                                Comitado no GitHub e disnonível no Vercel</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://react-filmes-psi.vercel.app" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/JuliaLopesCoimbra/React-Filmes"
+                                                    target="_blank" class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/podzin.jpg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sitema de Pizzaria</h5>
+                                            <p class="card-text">Projeto construído em React, NodeJS, JavaScript....
+                                            </p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://react-filmes-psi.vercel.app" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/JuliaLopesCoimbra/React-Filmes"
+                                                    target="_blank" class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/podzin.jpg.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">E-commerce de Pod</h5>
+                                            <p class="card-text">Projeto criado com HTML, CSS e JavaScrpit. Comitado no
+                                                GitHub e disnonível no Vercel</p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://podzin.vercel.app/index.html" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/JuliaLopesCoimbra/podzin" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/trote.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Trote Solidário</h5>
+                                            <p class="card-text">Projeto construído em CSS, Html e JavaScript, foi construído no primeiro semestre da faculdade para ajudar no trote solidário. Comitado no
+                                                GitHub e disnonível no Vercel
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://trote-solidario.vercel.app" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                                <a href="https://github.com/JuliaLopesCoimbra/TroteSolidario"
+                                                    target="_blank" class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/cloud.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Certificados Google Cloud</h5>
+                                            <p class="card-text">Cursos realizados pela plataforma Google Cloud e meus certificados estão no link abaixo:
+                                            </p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://www.cloudskillsboost.google/public_profiles/3bfbc9b5-b9da-45a7-98fa-8978c4e269d2" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/oracle.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Certificado Curso de Oracle</h5>
+                                            <p class="card-text">Curso extracurrícular realizado em 2023</p>                                           
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/java.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Certificado Curso de JAVA</h5>
+                                            <p class="card-text">Curso extracurrícular realizado em 2023
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/tcc.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">TCC do Curso Técnico</h5>
+                                            <p class="card-text">Acesso apenas pelo GitHub, pois o site não é mais frequentado e saiu do ar ( O projeto buscava trazer acesso
+                                            gratuito para estudar e treinar diante das provas anteriores do ENEM)
+                                            </p>
+                                            <div class="d-flex justify-content-center">
+                                                <a href="https://github.com/GuiPlayer321/TCC-Se-Vira" target="_blank"
+                                                    class="btn btn-outline-primary"> <i
+                                                        class="bi bi-link-45deg"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+        
+                                <div class="col">
+                                    <div class="card">
+                                        <img src="../static/img/amarelos.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mérito a 2 lugar na Maratona de Programação</h5>
+                                            <p class="card-text">Evento extracurricular da Faculdade Uni-FACEF, eu e meus amigos ficamos em 2 lugar na maratona</p>                                           
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortifolio"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselPortifolio"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container mb-5" >
+                <h2 class="pt-3 pb-3">
+                    Contato
+                </h2>
+                <div class="row">
+                    <div class="col-md-5" >
+                        <div class="card p-5 shadow border-0" data-animation="up">
+                            <div class="endereco">
+                                <h4><i class="bi bi-geo-alt"></i> Localização:</h4>
+                                <p>Franca, SP</p>
+                            </div>
+
+                            <div class="email">
+                                <h4><i class="bi bi-envelope"></i> Email:</h4>
+                                <p>juliacristinalopes2607@gmail.com</p>
+                            </div>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.547844485485!2d-47.37475508835993!3d-20.565673158340054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a8ccde997897%3A0xd1869306504173ad!2sR.%20Ana%20Carolina%20Ferreira%20Arantes%20-%20Recanto%20Elimar%2C%20Franca%20-%20SP%2C%2014403-833!5e0!3m2!1spt-BR!2sbr!4v1705702612767!5m2!1spt-BR!2sbr"
+                             width="350" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                          
+
+                        </div>
+                    </div>
+                    <div class="col-md-7 mt-5 mt-md-0">
+                        <div class="card p-5 h-100 shadow border-0" data-animation="left">
+
+                            <form class="row g-3">
+
+                                <div class="col-md-6">
+                                  <label for="nome" class="form-label">Nome:</label>
+                                  <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu Nome">
+                                </div>
+
+                                <div class="col-md-6">
+                                  <label for="email" class="form-label">Email:</label>
+                                  <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+                                </div>
+
+                                <div class="col-12">
+                                  <label for="mensagem" class="form-label">Mensagem:</label>
+                                  <textarea type="text" class="form-control" id="mensagem" placeholder="Digite sua Mensagem" name="mensagem" rows="10"></textarea>
+                                </div>
+                                
+                            
+                                <div class="col-12 d-flex justify-content-center mt-5">
+                                  <button type="submit" class="btn btn-outline-primary">Enviar Mensagem</button>
+                                </div>
+
+                              </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
     </main>
-    
+
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>
 </body>
+
 </html>
